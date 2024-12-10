@@ -1,22 +1,19 @@
 class InputForm:
     @staticmethod
     def input_data():
-        nim = input("NIM: ")
         nama = input("Nama: ")
-        tugas = float(input("Nilai Tugas: "))
-        uts = float(input("Nilai UTS: "))
-        uas = float(input("Nilai UAS: "))
+        nim = int(input("Nim: "))
+        tugas = input("Prodi: ")
         return nim, nama, tugas, uts, uas
 
-    @staticmethod
+     @staticmethod
+    def input_hapus_data():
+        nama = input("Masukkan Nama: ")
+
+     @staticmethod
     def input_ubah_data():
-        nim = input("Masukkan NIM: ")
-        print("Masukkan data baru (tekan Enter jika tidak ingin mengubah):")
-        nama = input("Nama: ").strip() or None
-        tugas = input("Nilai Tugas: ").strip()
-        tugas = float(tugas) if tugas else None
-        uts = input("Nilai UTS: ").strip()
-        uts = float(uts) if uts else None
-        uas = input("Nilai UAS: ").strip()
-        uas = float(uas) if uas else None
-        return nim, nama, tugas, uts, uas
+        nama = input("Masukkan Nama: ")
+        nim = input("Nim: ")
+        tugas = input("Nilai Tugas: ")
+        
+        return nama, nim, prodi
